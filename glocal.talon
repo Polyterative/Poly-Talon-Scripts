@@ -19,14 +19,19 @@ minimize: key(win-down
 slash: key(ctrl-backspace)
 bash: key(backspace)
 smash: key(ctrl-delete)
+delete: key(delete)
 
-push: key(ctrl-right)
-pop: key(ctrl-left)
+#push: key(ctrl-right)
+#pop: key(ctrl-left)
+
+jump: key(ctrl-right)
+flip: key(ctrl-left)
 
 confirm: key(enter)
 # slap: key(enter)
 yes: key(enter)
 escape: key(escape)
+no: key(escape)
 
 desktop: key(win-d)
 chrome: key(win-1)
@@ -41,6 +46,8 @@ scroll up: key(pgup)
 home: key(home)
 end: key(end)
 
+
+
 right: key(right)
 left: key(left)
 up: key(up)
@@ -54,16 +61,16 @@ space: key(space)
 
 close program: key(alt-f4)
 
-one: key(1)
-two: key(2)
-three: key(3)
-four: key(4)
-five: key(5)
-six: key(6)
-seven: key(7)
-eight: key(8)
-nine: key(9)
-zero: key(0)10
+# number one: key(1)
+# number two: key(2)
+# number three: key(3)
+# number four: key(4)
+# number five: key(5)
+# number six: key(6)
+# number seven: key(7)
+# number eight: key(8)
+# number nine: key(9)
+# number zero: key(0)10
 
 
 down <number_small>: key("down:{number_small}")

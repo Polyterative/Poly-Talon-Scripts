@@ -2,10 +2,15 @@ app.name: WebStorm
 -
 
 settings():
-    key_hold = 15
+    key_hold = 20
+
+
+style: key(f1)
+redo: key(ctrl-y)
+
+close: key(ctrl-w)
 
 windows: key(ctrl-shift-f12)
-style: key(f1)
 fix indent: key(ctrl-alt-i)
 refactor: key(f12)
 change signature: key(ctrl-f6)
@@ -26,7 +31,7 @@ find <user.word>:
   key(escape)
 
 
-
+focus: key(ctrl-alt-shift-])
 
 search: key(shift shift)
 big search: key(ctrl-shift-f)
@@ -84,12 +89,18 @@ locations: key(ctrl-shift-f11)
 help: key(alt-enter)
 fix: key(alt-shift-enter)
 imports: key(alt-shift-enter)
-docs: key(ctrl-q)
+info: key(ctrl-q)
+
+
 extract method: key(ctrl-alt-m)
 extract variable: key(ctrl-alt-v)
-show parameters: key(ctrl-P)
+extract parameter: key(ctrl-alt-p)
+
+inputs: key(ctrl-p)
 what: key(f2)
 surround with: key(alt-t)
+
+run last: key(shift-f10)
 
 move up: key(ctrl-shift-up)
 move down: key(ctrl-shift-down)
@@ -116,17 +127,22 @@ tab left: key(ctrl-shift-tab)
 tab right: key(ctrl-tab)
 close: key(ctrl-f4)
 
-top: key(ctrl-home)
+top: key(ctrl-shift-alt-g delete 1 enter)
 bottom: key(ctrl-end)
 
 follow: key(.)
 local: key(t h i s)
 
 accept copilot: key(tab enter)
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
 
+alpha: key(` `)
+bravo: key(` ` `)
+charlie: key(` ` ` `)
+delta:   key(` ` ` ` `)
 
-
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
 # dot: key(.)
 comma: key(,)
@@ -154,21 +170,32 @@ symbol underscore: key(_)
 symbol hash: key(#)
 # less: key(<)
 # greater: key(>)
+left round: insert("(")
+right round: insert(")")
 left square: key([)
 right square: key(])
 left curly: key({)
 right curly: key(})
 
 
+# private:    insert("private ")
+# public:    insert("public ")
+# true:    insert('true')
+# false:    insert('false')
+
+undefined:    insert("undefined ")
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+
 head:
      key("ctrl-f")
-      sleep(10ms)
+      sleep(20ms)
       insert("class")
-      sleep(20ms)
+      sleep(25ms)
       key("esc")
-      sleep(20ms)
+      sleep(25ms)
       key("right")
-      sleep(20ms)
+      sleep(25ms)
       key("right")
       sleep(25ms)
       key("shift-f3")
@@ -176,15 +203,17 @@ head:
 
 
 constructor:
-     key("ctrl-f")
+      key(ctrl-shift-alt-g delete 1 enter)
+      key("ctrl-f")
       sleep(10ms)
       insert("constructor")
       sleep(20ms)
       key("esc")
       # key("ctrl-w")
 
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
-with latest from:
+add with latest from:
       insert("withLatestFrom(this.)")
       sleep(20ms)
       key("left")
@@ -192,10 +221,10 @@ with latest from:
 
 
 
-take until:
+add take until:
       insert("takeUntil(this.destroyEvent$),")
 
-debounce time:
+add debounce time:
       insert("debounceTime(500),")
       key("left")
       key("left")
@@ -203,7 +232,7 @@ debounce time:
             key("ctrl-space")
 
 
-filter:
+add filter:
       insert("filter(x => x.length > 2),")
       key("left")
       key("left")
@@ -213,7 +242,7 @@ filter:
       key("ctrl-space")
 
 
-map:
+add map:
       insert("map(x => x.),")
       sleep(20ms)
       key("left")
@@ -221,25 +250,21 @@ map:
       key("ctrl-space")
 
 
-switch map:
+add switch map:
       insert("switchMap(x => x.),")
       sleep(20ms)
       key("left")
       key("left")
       key("ctrl-space")
 
-tap:
+add tap:
       insert("tap(x => x.),")
       sleep(20ms)
       key("left")
       key("left")
       key("ctrl-space")
 
-
-
-
-
-
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
 tab one: key(ctrl-alt-1)
 tab two: key(ctrl-alt-2)
