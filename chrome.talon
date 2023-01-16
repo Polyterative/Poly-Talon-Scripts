@@ -18,6 +18,8 @@ find: key(ctrl-f)
 find next: key(f3)
 find previous: key(shift-f3)
 
+console: key(ctrl-shift-j)
+
 reopen tab: key(ctrl-shift-t)
 
 copy link:

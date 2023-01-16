@@ -4,28 +4,37 @@ save: key(ctrl-s)
 copy: key(ctrl-c)
 cut: key(ctrl-x)
 drop: key(ctrl-v)
-special drop: key(win-v)
+special drop: key(windows-v)
 # close: key(ctrl-w)
 
 tab right: key(ctrl-tab)
 tab left: key(ctrl-shift-tab)
 
 full screen: key(f11)
-fullscreen: key(f11)
 switch: key(alt-tab)
-maximize: key(win-up)
-minimize: key(win-down
+maximize: key(win-up win-up win-up)
+minimize: key(win-down)
 
 slash: key(ctrl-backspace)
 bash: key(backspace)
 smash: key(ctrl-delete)
 delete: key(delete)
 
-#push: key(ctrl-right)
-#pop: key(ctrl-left)
-
 jump: key(ctrl-right)
 flip: key(ctrl-left)
+
+
+# trace right: key(shift-end)
+# trace left: key(shift-home)
+
+trace up: key(shift-up)
+trace down: key(shift-down)
+
+trace right: key(ctrl-shift-right)
+trace left: key(ctrl-shift-left)
+
+trace home: key(shift-home)
+trace end: key(shift-end)
 
 confirm: key(enter)
 # slap: key(enter)
@@ -56,9 +65,7 @@ down: key(down)
 # touch: key(mouse-left)
 
 tab: key(tab)
-
 space: key(space)
-
 close program: key(alt-f4)
 
 # number one: key(1)

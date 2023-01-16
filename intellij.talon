@@ -4,8 +4,9 @@ app.name: WebStorm
 settings():
     key_hold = 20
 
+command list: key(ctrl-0)
 
-style: key(f1)
+style: key(ctrl-s f1)
 redo: key(ctrl-y)
 
 close: key(ctrl-w)
@@ -31,7 +32,11 @@ find <user.word>:
   key(escape)
 
 
-focus: key(ctrl-alt-shift-])
+focus: key(ctrl-alt-shift-f)
+focus jump: key(ctrl-alt-shift-])
+
+reference copy: key(ctrl-shift-alt-c)
+reference open: key(shift shift ctrl-v space enter)
 
 search: key(shift shift)
 big search: key(ctrl-shift-f)
@@ -44,8 +49,6 @@ double: key(ctrl-d)
 
 more: key(`)
 less: key(~)
-trace right: key(shift-end)
-trace left: key(shift-home)
 
 # Comment this line
 comment: key(f5)
@@ -57,24 +60,44 @@ out <number_small>: key("f6:{number_small}")
 below: key(ctrl-shift-enter)
 above: key(ctrl-enter)
 send code: key(f10)
+push code: key(ctrl-s ctrl-f10)
 
 # Git actions
-commit: key(f10)
+git: key(alt-2)
+update git: key(ctrl-g)
+update project: key(ctrl-g)
+git update: key(ctrl-g)
+git squash: key(f3)
+# commit: key(f10)
 previous change: key(ctrl-alt-up)
 next change: key(ctrl-alt-down)
 undo changes: key(alt-z)
 
-# open round: key(()
-# close round: key())
+
+
+# open round: insert("(")
+# close round: insert(")")
 #
-# open array: key([)
-# open square: key([)
+# open array: insert("[")
+# open square: insert("[")
 #
-# close array: key(])
-# close square: key(])
+# close array: insert("]")
+# close square: insert("]")
 #
-# open curly: key({)
-# close curly: key(})
+# open curly: insert("{")
+# close curly: insert("}")
+
+open round: insert("(")
+close round: insert(")")
+
+open array: insert("[")
+open square: insert("[")
+
+close array: insert("]")
+close square: insert("]")
+
+open curly: insert("{")
+close curly: insert("}")
 
 screenshot: key(ctrl-shift-alt-A)
 split: key(ctrl-shift-alt-. )
@@ -83,7 +106,7 @@ spit down: key(ctrl-shift-alt-,)
 reopen tab: key(ctrl-shift-t)
 clean tabs: key(alt-c)
 breakpoint: key(ctrl-f8)
-step: key(shift-f9)
+go step: key(ctrl-f9)
 bookmark: key(ctrl-f11)
 locations: key(ctrl-shift-f11)
 help: key(alt-enter)
@@ -101,6 +124,8 @@ what: key(f2)
 surround with: key(alt-t)
 
 run last: key(shift-f10)
+debug last: key(shift-f9)
+show run: key(alt-4)
 
 move up: key(ctrl-shift-up)
 move down: key(ctrl-shift-down)
@@ -116,8 +141,6 @@ last: key(alt-backspace)
 list: key(alt-1)
 fullscreen: key(f11)
 settings: key(ctrl-alt-s)
-git: key(alt-2)
-update git: key(ctrl-g)
 
 show: key(shift-space)
 
@@ -144,10 +167,18 @@ delta:   key(` ` ` ` `)
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
+of type string: insert(": string")
+of type object: insert(": {}")
+
+object: insert("{}")
+array: key( [ ] )
+string: insert("""")
+
 # dot: key(.)
 comma: key(,)
 semicolon: key(;)
 colon: key(:)
+under score: key(_)
 symbol question: key(?)
 symbol exclamation: key(!)
 symbol quote: key(')
@@ -166,7 +197,6 @@ symbol star: key(*)
 symbol plus: key(+)
 symbol minus: key(-)
 symbol equal: key(=)
-symbol underscore: key(_)
 symbol hash: key(#)
 # less: key(<)
 # greater: key(>)
@@ -174,8 +204,10 @@ left round: insert("(")
 right round: insert(")")
 left square: key([)
 right square: key(])
-left curly: key({)
-right curly: key(})
+# left curly: key({)
+# right curly: key(})
+left brace: key({)
+right brace: key(})
 
 
 # private:    insert("private ")
@@ -213,6 +245,14 @@ constructor:
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
+add pipe:
+      insert(".pipe()")
+      key("left")
+      key("enter")
+
+add new behavior subject:
+      insert("withLatestFrom(this.)")
+
 add with latest from:
       insert("withLatestFrom(this.)")
       sleep(20ms)
@@ -222,7 +262,7 @@ add with latest from:
 
 
 add take until:
-      insert("takeUntil(this.destroyEvent$),")
+      insert("takeUntil(this.destroy$),")
 
 add debounce time:
       insert("debounceTime(500),")
