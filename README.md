@@ -16,7 +16,7 @@ Clone repo into `~/.talon/user`
 
 ```insert code:
 cd ~/.talon/user
-git clone  https://github.com/knausj85/knausj_talon knausj_talon](https://github.com/Polyterative/Poly-Talon-Scripts/)
+git clone https://github.com/Polyterative/Poly-Talon-Scripts/
 ```
 
 Alternatively, access the directory by right clicking the Talon icon in taskbar, clicking Scripting>Open ~/talon, and navigating to user.
