@@ -4,7 +4,7 @@ save: key(ctrl-s)
 copy: key(ctrl-c)
 cut: key(ctrl-x)
 drop: key(ctrl-v)
-special drop: key(windows-v)
+special drop: key(win-v)
 # close: key(ctrl-w)
 
 tab right: key(ctrl-tab)
@@ -48,6 +48,8 @@ mail: key(win-2)
 calendar: key(win-3)
 code: key(win-4)
 telegram: key(win-5)
+
+teams: key(win-5)
 
 scroll: key(pgdown)
 page: key(pgdown)

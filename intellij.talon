@@ -6,6 +6,8 @@ settings():
 
 command list: key(ctrl-0)
 
+macro:key(ctrl-alt-a)
+
 style: key(ctrl-s f1)
 redo: key(ctrl-y)
 
@@ -124,6 +126,7 @@ what: key(f2)
 surround with: key(alt-t)
 
 run last: key(shift-f10)
+stop last: key(ctrl-f2)
 debug last: key(shift-f9)
 show run: key(alt-4)
 
@@ -150,11 +153,14 @@ tab left: key(ctrl-shift-tab)
 tab right: key(ctrl-tab)
 close: key(ctrl-f4)
 
+multi: key(ctrl-alt-f1)
+
 top: key(ctrl-shift-alt-g delete 1 enter)
 bottom: key(ctrl-end)
 
 follow: key(.)
 local: key(t h i s)
+
 
 accept copilot: key(tab enter)
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
@@ -215,9 +221,29 @@ right brace: key(})
 # true:    insert('true')
 # false:    insert('false')
 
-undefined:    insert("undefined ")
+
+private: insert("private ")
+public: insert("public ")
+protected: insert("protected ")
+
+equals: insert(" = ")
+        sleep(20ms)
+        key("ctrl-shift-space")
+
+
+undefined:insert("undefined ")
+new:insert("new ")
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+
+
+
+take:
+     key("`")
+     sleep(20ms)
+     key("ctrl-c")
+     key("esc")
+
 
 head:
      key("ctrl-f")
