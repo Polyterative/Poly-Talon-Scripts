@@ -53,6 +53,7 @@ teams: key(win-5)
 
 scroll: key(pgdown)
 page: key(pgdown)
+page up: key(pgup)
 scroll up: key(pgup)
 home: key(home)
 end: key(end)
