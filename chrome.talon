@@ -28,6 +28,12 @@ copy link:
   key("ctrl-c")
   key("esc")
 
+copy URL:
+  key("ctrl-k")
+    key("esc")
+    key("ctrl-c")
+    key("esc")
+
 fullscreen: key(f11)
 
 tab one: key(ctrl-1)

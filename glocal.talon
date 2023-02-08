@@ -16,6 +16,7 @@ maximize: key(win-up win-up win-up)
 minimize: key(win-down)
 
 slash: key(ctrl-backspace)
+slay: key(ctrl-backspace)
 bash: key(backspace)
 smash: key(ctrl-delete)
 delete: key(delete)
