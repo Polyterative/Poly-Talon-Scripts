@@ -22,6 +22,9 @@ console: key(ctrl-shift-j)
 
 reopen tab: key(ctrl-shift-t)
 
+top: key(home)
+bottom: key(end)
+
 copy link:
   key("ctrl-k")
   key("esc")

@@ -6,7 +6,6 @@ settings():
 
 command list: key(ctrl-0)
 
-macro:key(ctrl-alt-a)
 
 style: key(ctrl-s f1)
 redo: key(ctrl-y)
