@@ -1,4 +1,4 @@
-app.name: Google Chrome
+app.name: Microsoft Edge
 -
 
 settings():

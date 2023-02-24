@@ -1,4 +1,4 @@
-app.name: WebStorm
+app.name: IntelliJ IDEA
 -
 
 settings():
@@ -185,6 +185,7 @@ comma: key(,)
 semicolon: key(;)
 colon: key(:)
 under score: key(_)
+hashtag: key(#)
 symbol question: key(?)
 symbol exclamation: key(!)
 symbol quote: key(')
