@@ -22,11 +22,20 @@ console: key(ctrl-shift-j)
 
 reopen tab: key(ctrl-shift-t)
 
+top: key(home)
+bottom: key(end)
+
 copy link:
   key("ctrl-k")
   key("esc")
   key("ctrl-c")
   key("esc")
+
+copy URL:
+  key("ctrl-k")
+    key("esc")
+    key("ctrl-c")
+    key("esc")
 
 fullscreen: key(f11)
 

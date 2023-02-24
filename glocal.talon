@@ -16,6 +16,7 @@ maximize: key(win-up win-up win-up)
 minimize: key(win-down)
 
 slash: key(ctrl-backspace)
+slay: key(ctrl-backspace)
 bash: key(backspace)
 smash: key(ctrl-delete)
 delete: key(delete)
@@ -85,3 +86,27 @@ close program: key(alt-f4)
 
 down <number_small>: key("down:{number_small}")
 up <number_small>: key("up:{number_small}")
+
+# disables commands for the times I call alexa
+alexa: key()
+
+
+# macro:
+      key("f2")
+      sleep(950ms)
+      key("delete")
+      sleep(950ms)
+      key("tab")
+      sleep(950ms)
+      key("f2")
+      sleep(950ms)
+      key("delete")
+      sleep(950ms)
+      key("tab")
+      sleep(950ms)
+      key("f2")
+      sleep(950ms)
+      key("delete")
+      sleep(950ms)
+      key("tab")
+      sleep(950ms)

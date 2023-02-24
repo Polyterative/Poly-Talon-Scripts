@@ -6,7 +6,6 @@ settings():
 
 command list: key(ctrl-0)
 
-macro:key(ctrl-alt-a)
 
 style: key(ctrl-s f1)
 redo: key(ctrl-y)
@@ -38,7 +37,12 @@ focus: key(ctrl-alt-shift-f)
 focus jump: key(ctrl-alt-shift-])
 
 reference copy: key(ctrl-shift-alt-c)
-reference open: key(shift shift ctrl-v space enter)
+
+reference open:
+                key(shift shift ctrl-v space)
+                sleep(1000ms)
+                key(enter)
+
 
 search: key(shift shift)
 big search: key(ctrl-shift-f)
@@ -61,7 +65,14 @@ out <number_small>: key("f6:{number_small}")
 
 below: key(ctrl-shift-enter)
 above: key(ctrl-enter)
-send code: key(f10)
+
+
+send code:
+      key("ctrl-s")
+      sleep(20ms)
+      key("f10")
+
+
 push code: key(ctrl-s ctrl-f10)
 
 # Git actions
@@ -111,6 +122,7 @@ breakpoint: key(ctrl-f8)
 go step: key(ctrl-f9)
 bookmark: key(ctrl-f11)
 locations: key(ctrl-shift-f11)
+recent: key(ctrl-e)
 help: key(alt-enter)
 fix: key(alt-shift-enter)
 imports: key(alt-shift-enter)
@@ -123,7 +135,7 @@ extract parameter: key(ctrl-alt-p)
 
 inputs: key(ctrl-p)
 what: key(f2)
-surround with: key(alt-t)
+surround: key(alt-t)
 
 run last: key(shift-f10)
 stop last: key(ctrl-f2)
@@ -205,8 +217,10 @@ symbol plus: key(+)
 symbol minus: key(-)
 symbol equal: key(=)
 symbol hash: key(#)
-# less: key(<)
-# greater: key(>)
+
+lesser: key(<)
+greater: key(>)
+
 left round: insert("(")
 right round: insert(")")
 left square: key([)
@@ -215,6 +229,8 @@ right square: key(])
 # right curly: key(})
 left brace: key({)
 right brace: key(})
+
+pipe async: insert("|async")
 
 
 # private:    insert("private ")
@@ -237,7 +253,7 @@ new:insert("new ")
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
-
+flex align: insert("fxLayoutAlign='center center'")
 
 take:
      key("`")
@@ -266,7 +282,7 @@ constructor:
       key("ctrl-f")
       sleep(10ms)
       insert("constructor")
-      sleep(20ms)
+      sleep(30ms)
       key("esc")
       # key("ctrl-w")
 
@@ -277,8 +293,8 @@ add pipe:
       key("left")
       key("enter")
 
-add new behavior subject:
-      insert("withLatestFrom(this.)")
+add behavior subject:
+      insert("behaviorSubject$ = this.build.stateReplay<string>('channel');")
 
 add with latest from:
       insert("withLatestFrom(this.)")
