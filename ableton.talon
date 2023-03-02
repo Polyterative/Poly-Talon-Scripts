@@ -1,4 +1,4 @@
-app.name: Ableton Live
+app.name: Ableton Live 11 Suite.exe
 -
 
 default: key(delete)
@@ -49,73 +49,12 @@ stop: key(space)
 
 
 group: key(ctrl+g)
-destroy: key(delete)
-duplicate: key(ctrl+d)
-solo: key(s)
-mute: key(m)
+ungroup: key(ctrl
 
 save: key(ctrl+s)
-
-
 
 
 create track: key(ctrl+t)
 
 
 search: key(ctrl+f)
-
-
-
-Hide/Show Info View
-
-Shift-?
-
-Shift-?
-
-Hide/Show Video Window
-
-CTRL-ALT-V
-
-CTRL-ALT-V
-
-Hide/Show Browser
-
-CTRL-ALT-B
-
-CMD-ALT-B
-
-Hide/Show Overview
-
-CTRL-ALT-O
-
-CMD-ALT-O
-
-Hide/Show In/Out
-
-CTRL-ALT-I
-
-CMD-ALT-I
-
-Hide/Show Sends
-
-CTRL-ALT-S
-
-CMD-ALT-S
-
-Hide/Show Mixer
-
-CTRL-ALT-M
-
-CMD-ALT-M
-
-Open the Preferences
-
-CTRL-,
-
-CMD-,
-
-Close Window/Dialog
-
-ESC
-
-ESC
