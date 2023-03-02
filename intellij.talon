@@ -1,4 +1,4 @@
-app.name: WebStorm
+app.name: IntelliJ IDEA
 -
 
 settings():
