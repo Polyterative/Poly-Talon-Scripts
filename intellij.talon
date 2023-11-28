@@ -1,4 +1,4 @@
-app.name: IntelliJ IDEA
+app.name: WebStorm
 -
 
 settings():
@@ -7,7 +7,8 @@ settings():
 command list: key(ctrl-0)
 
 
-style: key(ctrl-s f1)
+;style: key(f1)
+jam: key(f1)
 redo: key(ctrl-y)
 
 close: key(ctrl-w)
@@ -79,6 +80,7 @@ push code: key(ctrl-s ctrl-f10)
 git: key(alt-2)
 update git: key(ctrl-g)
 update project: key(ctrl-g)
+update: key(ctrl-g)
 git update: key(ctrl-g)
 git squash: key(f3)
 # commit: key(f10)
@@ -255,9 +257,35 @@ new:insert("new ")
 
 flex align: insert("fxLayoutAlign='center center'")
 
+pipe async: insert("|async")
+by passing: insert("|async")
+
+jolly: insert("x")
+
+log: insert("console.log(")
+
+return: insert("return ")
+export: insert("export ")
+constant: insert("const ")
+variable: insert("let ")
+;function: insert("function ")
+;class: insert("class ")
+;interface: insert("interface ")
+
+
+boogie: key(tab)
+
+
+insert:
+     key("`")
+     sleep(35ms)
+     key("ctrl-v")
+     key("esc")
+
+
 take:
      key("`")
-     sleep(20ms)
+     sleep(35ms)
      key("ctrl-c")
      key("esc")
 
@@ -288,31 +316,56 @@ constructor:
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
 
+
+
 add pipe:
       insert(".pipe()")
       key("left")
       key("enter")
+      key("escape")
+
+
+
+add subscribe:
+      insert(".subscribe(x=>{})")
+      key("left")
+      key("enter")
+      key("escape")
+
+
 
 add behavior subject:
       insert("behaviorSubject$ = this.build.stateReplay<string>('channel');")
+      key("escape")
+
 
 add with latest from:
       insert("withLatestFrom(this.)")
       sleep(20ms)
       key("left")
       key("ctrl-space")
+      key("escape")
+
 
 
 
 add take until:
       insert("takeUntil(this.destroy$),")
+      key("escape")
+
+
+add take one:
+      insert("take(1),")
+      key("escape")
+
 
 add debounce time:
       insert("debounceTime(500),")
       key("left")
       key("left")
       key("`")
-            key("ctrl-space")
+      key("ctrl-space")
+
 
 
 add filter:
@@ -325,12 +378,14 @@ add filter:
       key("ctrl-space")
 
 
+
 add map:
       insert("map(x => x.),")
       sleep(20ms)
       key("left")
       key("left")
       key("ctrl-space")
+
 
 
 add switch map:
