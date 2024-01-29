@@ -274,6 +274,7 @@ variable: insert("let ")
 
 
 boogie: key(tab)
+go: key(tab)
 
 
 insert:
