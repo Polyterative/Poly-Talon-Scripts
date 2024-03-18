@@ -19,6 +19,7 @@ find next: key(f3)
 find previous: key(shift-f3)
 
 console: key(ctrl-shift-j)
+clean: key(ctrl-l)
 
 reopen tab: key(ctrl-shift-t)
 
