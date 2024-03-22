@@ -266,9 +266,10 @@ log: insert("console.log(")
 
 return: insert("return ")
 export: insert("export ")
+var: insert("let ")
 constant: insert("const ")
 variable: insert("let ")
-;function: insert("function ")
+function: insert("function ")
 ;class: insert("class ")
 ;interface: insert("interface ")
 
