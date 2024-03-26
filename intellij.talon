@@ -273,6 +273,9 @@ function: insert("function ")
 ;class: insert("class ")
 ;interface: insert("interface ")
 
+camel: key(ctrl-shift-alt-f1)
+kebab: key(ctrl-shift-alt-f2)
+
 
 boogie: key(tab)
 go: key(tab)
