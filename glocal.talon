@@ -30,6 +30,9 @@ flip: key(ctrl-left)
 # trace right: key(shift-end)
 # trace left: key(shift-home)
 
+east: key(ctrl-right)
+west: key(ctrl-left)
+
 trace up: key(shift-up)
 trace down: key(shift-down)
 
@@ -59,6 +62,38 @@ page up: key(pgup)
 scroll up: key(pgup)
 home: key(home)
 end: key(end)
+
+
+
+;radio alphabet aerospace
+alpha: key(a)
+bravo: key(b)
+charlie: key(c)
+delta: key(d)
+echo: key(e)
+foxtrot: key(f)
+golf: key(g)
+hotel: key(h)
+india: key(i)
+juliet: key(j)
+kilo: key(k)
+lima: key(l)
+mike: key(m)
+november: key(n)
+oscar: key(o)
+papa: key(p)
+quebec: key(q)
+romeo: key(r)
+sierra: key(s)
+tango: key(t)
+uniform: key(u)
+victor: key(v)
+whiskey: key(w)
+xray: key(x)
+yankee: key(y)
+zulu: key(z)
+
+
 
 
 
