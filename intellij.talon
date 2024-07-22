@@ -244,6 +244,7 @@ pipe async: insert("|async")
 private: insert("private ")
 public: insert("public ")
 protected: insert("protected ")
+class: insert("class")
 
 equals: insert(" = ")
         sleep(20ms)
