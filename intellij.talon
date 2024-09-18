@@ -47,6 +47,7 @@ reference open:
 
 search: key(shift shift)
 big search: key(ctrl-shift-f)
+big replace: key(ctrl-shift-r)
 
 north: key(alt-up)
 south: key(alt-down)
@@ -66,6 +67,8 @@ out <number_small>: key("f6:{number_small}")
 
 below: key(ctrl-shift-enter)
 above: key(ctrl-enter)
+
+json: insert("json")
 
 
 send code:
@@ -270,6 +273,7 @@ var: insert("let ")
 constant: insert("const ")
 variable: insert("let ")
 function: insert("function ")
+namespace: insert("namespace ")
 ;class: insert("class ")
 ;interface: insert("interface ")
 
@@ -280,6 +284,11 @@ kebab: key(ctrl-shift-alt-f2)
 boogie: key(tab)
 go: key(tab)
 
+
+accept:
+     key("tab")
+     sleep(35ms)
+     key("enter")
 
 insert:
      key("`")
