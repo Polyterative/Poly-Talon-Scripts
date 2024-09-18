@@ -1,4 +1,4 @@
-app.name: Ableton Live 11 Suite.exe
+app.name: Ableton Live 12 Suite.exe
 -
 
 default: key(delete)
