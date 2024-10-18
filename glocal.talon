@@ -54,7 +54,7 @@ calendar: key(win-3)
 code: key(win-4)
 telegram: key(win-5)
 
-teams: key(win-5)
+windows: key(win)
 
 scroll: key(pgdown)
 page: key(pgdown)
