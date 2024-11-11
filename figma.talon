@@ -19,8 +19,7 @@ duplicate: key(ctrl-d)
 replace: key(ctrl-shift-r)
 
 link: key(ctrl-l)
-
-
+reset: key(ctrl-alt-/)
 
 
 collapse: key(alt-l)
@@ -28,7 +27,8 @@ collapse: key(alt-l)
 
 
 command: key(ctrl-p)
-
+comments: key(c)
+edit: key(v)
 
 ; Select & Deselect
 ;select-all: key(ctrl-a)
